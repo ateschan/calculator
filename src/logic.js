@@ -127,6 +127,7 @@ function modifyCurrentNumber(mod) {
             else if (num != null) {
                 num = num * -1;
             }
+            break;
         case 'percent':
             if (numTwo != null) {
                 numTwo = numTwo * .01;
@@ -134,13 +135,15 @@ function modifyCurrentNumber(mod) {
             else if (num != null) {
                 num = num * .01;
             }
+            break;
         case 'decimal':
             if (numTwo != null) {
-                numTwo = numTwo * 1.0;
+                numTwo = (numTwo * .1).toFixed(4);
             }
             else if (num != null) {
-                num = num * 1.0;
+                num = (num * .1).toFixed(4);
             }
+            break;
         default: {
             console.log("modification nod found!");
             break;
