@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+</body>
+
+    <div id="calc-backdrop" class= "column">
+        <div id="display" class="row">
+            <div id="display-screen" class="row">
+
+            </div>     
+        </div>
+        <div id="input" class="row">
+            <div class="row">
+                <button onclick = "operate('clear')" class="column" id="AC"> AC </button>
+                <button onclick = "operate('sign-switch')" class="column" id="+/-"> + / - </button>
+                <button onclick = "operate('percent')" class="column" id="%"> % </button>
+                <button onclick = "operate('divide')" class="column" id="/"> / </button>
+            </div>
+            <div class="row">
+                <button onclick = "numInput(7)" class="column" id="_7"> 7 </button>
+                <button onclick = "numInput(8)" class="column" id="_8"> 8 </button>
+                <button onclick = "numInput(9)" class="column" id="_9"> 9 </button>
+                <button onclick = "operate('multiply')" class="column" id="*"> * </button>
+            </div>
+            <div class="row">
+                <button onclick = "numInput(4)" class="column" id="_4"> 4 </button>
+                <button onclick = "numInput(5)" class="column" id="_5"> 5 </button>
+                <button onclick = "numInput(6)" class="column" id="_6"> 6 </button>
+                <button onclick = "operate('subtract')" class="column" id="-"> - </button>
+            </div>
+            <div class="row">
+                <button onclick = "numInput(1)" class="column" id="_1"> 1 </button>
+                <button onclick = "numInput(2)" class="column" id="_2"> 2 </button>
+                <button onclick = "numInput(3)" class="column" id="_3"> 3 </button>
+                <button onclick = "operate('add')" class="column" id="+"> + </button>
+            </div>
+            <div class="row">
+                <button onclick = "numInput(0)" class="column" id="Zero"> 0 </button>
+                <button onclick = "operate('decimal')" class="column" id="dot"> . </button>
+                <button onclick = "ev()" class="column" id="="> = </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./src/logic.js"></script> 
+</html>
