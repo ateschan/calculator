@@ -1,6 +1,6 @@
 # Calculator
 
-This is a simple calculator made for the Odin Project web developmetn bootcamp. 
+This is a simple calculator made for the Odin Project web development bootcamp. 
 It marks my completion of the fundementals course.
 
 ## Features
